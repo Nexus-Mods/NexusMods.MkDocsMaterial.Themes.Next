@@ -19,11 +19,79 @@ the future iteration of the NexusMods site.
 
 The overall wiki theme should look fairly close to the actual site appearance.
 
-## Usage
+## Setup From Scratch
+
+- Add [this repository](https://github.com/Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next) as submodule to `docs/Nexus`.
+- Save the following configuration as `mkdocs.yml` in your repository root.
+
+```yaml
+site_name: Nexus NX MkDocs Theme
+site_url: https://github.com/Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next
+
+repo_name: Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next
+repo_url: https://github.com/Nexus-Mods/NexusMods.MkDocsMaterial.Themes.Next
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Nexus-Mods
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/NexusSites
+
+extra_css:
+  - Nexus/Stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist
+  - def_list
+  - meta
+  - md_in_html
+  - attr_list
+  - footnotes
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+theme:
+  name: material
+  palette:
+    scheme: nexus-slate
+  features:
+    - navigation.instant
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+```
+
+- Push to GitHub, this should produce a GitHub Pages site.  
+- Go to `Settings -> Pages` in your repo and select `gh-pages` branch to enable GitHub pages. 
+
+Your page should then be live.
+
+!!! tip
+
+    Refer to [Contributing](contributing.md#website-live-preview) for instructions on how to locally edit and modify the wiki.
+
+## Extra
 
 !!! info
 
-    Coming Soon.
+    Most documentation pages will also include additional plugins; some which are used in the pages here.  
+    Here is a sample complete mkdocs.yml you can copy to your project for reference.  
 
 
 ## Technical Questions
