@@ -1,0 +1,1 @@
+﻿Please visit the [documentation site for usage instructions & more](https://nexus-mods.github.io/NexusMods.MkDocsMaterial.Themes.Next/).
