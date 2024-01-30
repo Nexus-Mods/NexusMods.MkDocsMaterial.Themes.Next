@@ -2,27 +2,6 @@
   Nexus Mods Theme
 */
 
-:root {
-
-  /* For reuse later */
-  --md-primary-fg-color-rgb: 217, 143, 64;
-  
-  /* Primary color shades */
-  --md-primary-fg-color:        #D98F40;
-  --md-primary-fg-color--light: #E0A362;
-  --md-primary-fg-color--dark:  #C87B28;
-  
-  --md-primary-bg-color:        #FFFFFF;
-  --md-primary-bg-color--light: #FFFFFFB2;
-
-  /* Accent color shades */
-  --md-accent-fg-color:               #C87B28;
-  --md-accent-fg-color--transparent:  #C87B2810;
-  
-  --md-accent-bg-color:               #2A2C2B;
-  --md-accent-bg-color--light:        #2A2C2B;
-}
-
 .md-header {
   background-color:              #101010;
 }
@@ -30,6 +9,25 @@
 /* Slate theme, i.e. dark mode */
 
 [data-md-color-scheme="nexus-slate"] {
+
+    /* For reuse later */
+    --md-primary-fg-color-rgb: 217, 143, 64;
+
+    /* Primary color shades */
+    --md-primary-fg-color:        #D98F40;
+    --md-primary-fg-color--light: #E0A362;
+    --md-primary-fg-color--dark:  #C87B28;
+
+    --md-primary-bg-color:        #FFFFFF;
+    --md-primary-bg-color--light: #FFFFFFB2;
+
+    /* Accent color shades */
+    --md-accent-fg-color:               #C87B28;
+    --md-accent-fg-color--transparent:  #C87B2810;
+
+    --md-accent-bg-color:               #2A2C2B;
+    --md-accent-bg-color--light:        #2A2C2B;
+
 /*
    // Slate's hue in the range [0,360] - change this variable to alter the tone
    // of the theme, e.g. to make it more redish or greenish. This is a slate-
@@ -41,7 +39,7 @@
   --nexus-background-tertiary: #222222;
   --nexus-background-content-primary: #1C1C1C;
   --nexus-background-content-secondary: #2B2D2F;
- 
+
   --nexus-font-primary: #FFFFFF; /* #FFFFFF */
   --nexus-font-secondary: #AAAAAA; /* #AAAAAA */
   --nexus-font-tertiary: #5A5A5A; /* #5A5A5A */
@@ -59,11 +57,11 @@
   --md-default-bg-color--light:      var(--nexus-background-content-primary);
   --md-default-bg-color--lighter:    var(--nexus-background-tertiary);
   --md-default-bg-color--lightest:   var(--nexus-background-content-secondary);
-  
+
   /* Code color shades */
   --md-code-fg-color:                hsla(var(--md-hue), 18%, 86%, 1);
   --md-code-bg-color:                var(--nexus-background-content-secondary);
-  
+
   /* Code highlighting color shades */
   --md-code-hl-color:                #4287ff26;
   --md-code-hl-number-color:         hsla(219, 74%, 63%, 1);
@@ -78,54 +76,54 @@
   --md-code-hl-comment-color:        var(--md-default-fg-color--light);
   --md-code-hl-generic-color:        var(--md-default-fg-color--light);
   --md-code-hl-variable-color:       var(--md-default-fg-color--light);
-  
+
   /* Typeset color shades */
   --md-typeset-color:                var(--md-default-fg-color);
-  
+
   /* Typeset `a` color shades */
   --md-typeset-a-color:              var(--md-primary-fg-color);
-  
+
   /* Typeset `mark` color shades */
   --md-typeset-mark-color:           #4287ff4d;
-  
+
   /* Typeset `kbd` color shades */
   --md-typeset-kbd-color:            hsla(var(--md-hue), 15%, 94%, 0.12);
   --md-typeset-kbd-accent-color:     hsla(var(--md-hue), 15%, 94%, 0.2);
   --md-typeset-kbd-border-color:     hsla(var(--md-hue), 15%, 14%, 1);
-  
+
   /* Typeset `table` color shades */
   --md-typeset-table-color:          hsla(var(--md-hue), 75%, 95%, 0.12);
   --md-typeset-table-color--light:   hsla(var(--md-hue), 75%, 95%, 0.035);
-  
+
   /* Admonition color shades */
   --md-admonition-fg-color:          var(--md-default-fg-color);
   --md-admonition-bg-color:          var(--md-default-bg-color);
-  
+
   /* Footer color shades */
   --md-footer-bg-color:              var(--nexus-background-primary);
   --md-footer-bg-color--dark:        var(--nexus-background-primary);
-  
+
   /* Shadow depth 1 */
   --md-shadow-z1:
   0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.2),
   0 0              #{px2rem(1px)}  hsla(0, 0%, 0%, 0.1);
-  
+
   /* Shadow depth 2 */
   --md-shadow-z2:
   0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.3),
   0 0              #{px2rem(1px)}  hsla(0, 0%, 0%, 0.25);
-  
+
   /* Shadow depth 3 */
   --md-shadow-z3:
   0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.4),
   0 0              #{px2rem(1px)}  hsla(0, 0%, 0%, 0.35);
-  
+
   /* Hide images for light mode */
   img[src$="#only-light"],
   img[src$="#gh-light-mode-only"] {
     display: none;
   }
-  
+
   /* Show images for dark mode */
   img[src$="#only-dark"],
   img[src$="#gh-dark-mode-only"] {
@@ -152,7 +150,7 @@
 }
 .md-typeset .nexus > .admonition-title,
 .md-typeset .nexus > summary {
-  background-color: rgba(var(--md-primary-fg-color-rgb), 0.1); 
+  background-color: rgba(var(--md-primary-fg-color-rgb), 0.1);
 }
 .md-typeset .nexus > .admonition-title::before,
 .md-typeset .nexus > summary::before {
