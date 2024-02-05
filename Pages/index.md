@@ -102,7 +102,6 @@ jobs:
       pages: write
       id-token: write
     uses: Nexus-Mods/NexusMods.App.Meta/.github/workflows/mkdocs-build-and-deploy.yaml@main
-
 ```
 
 - Push to GitHub, this should produce a GitHub Pages site. 
