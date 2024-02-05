@@ -46,18 +46,48 @@ Here's a quick guide of how you could do it from your `command prompt` (cmd).
 1. Install Python 3
 
     If you have `winget` installed, or Windows 11, you can do this from the command prompt.
-    ```bash
-    winget install Python.Python.3
-    ```
+
+    === "Windows (winget)"
+
+        ```bash
+        winget install Python.Python.3
+        ```
+
+    === "Archlinux"
+
+        ```
+        pacman -S python-pip # you should already have Python
+        ```
 
     Otherwise download Python 3 from the official website or package manager.
 
 2. Install Material for MkDocs and Plugins (Python package)
-    ```bash
-    # Restart your command prompt before running this command.
-    pip install mkdocs-material
-    pip install mkdocs-redirects
-    ```
+
+
+    === "Windows/OSX"
+
+        ```bash
+        # Restart your command prompt before running this command.
+        pip install mkdocs-material
+        pip install mkdocs-redirects
+        ```
+
+    === "Linux"
+
+        On Linux, there is a chance that `python` might be a core part of your OS, meaning
+        that you ideally shouldn't touch the system installation.
+
+        Use virtual environments instead.
+
+        ```bash
+        python -m venv mkdocs # Create the environment
+        source ~/mkdocs/bin/activate # Enter the environment
+
+        pip install mkdocs-material
+        pip install mkdocs-redirects
+        ```
+
+        Make sure you enter the environment before any time you run mkdocs.
 
 3. Open a command prompt in the folder containing `mkdocs.yml`. and run the site locally.
     ```bash
